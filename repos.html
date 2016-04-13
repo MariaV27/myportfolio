@@ -4,9 +4,10 @@
   <title>Maria's Repos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ultra">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/repos.css">
-  <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
 </head>
 <body>
 <!--Navbar Start-->
@@ -16,36 +17,49 @@
         <a class="navbar-brand" href="home.html">Maria Vintimilla</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="repos.html">My Repos</a></li>
+        <li class="active"><a href="repos.html">My Repos</a></li>
         <li><a href="nonprofit.html">Nonprofit</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.facebook.com/maria.vintimilla.54" target="blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-        <li><a href="https://github.com/MariaV27" target="blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+        <li><a href="https://github.com/mariav27" target="blank"><i class="fa fa-github-square fa-2x"></i></a></li>
         <li><a href="https://twitter.com/LeSweetTart" target="blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
         <li><a href="https://www.linkedin.com/in/mariavintimilla" target="blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
       </ul>
     </div><!-- /.container-fluid -->
   </nav>
-
-
+<!--Navbar End-->
 <marquee behavior="scroll" direction="left" id="welcome">Hey there! Welcome to Maria's Repos, GitHub and Social Profile! :-)</marquee>
 <div class="active item">
          <img src="pics/github.jpg" alt="..." class="rutpix" height="300" width="500"></div>
 
-    <h2 id="h2">My Repos/Git</h2>
-    <p>
-    <ul>
-      <li><a id="links" href="https://protected-thicket-9025.herokuapp.com/">https://protected-thicket-9025.herokuapp.com/"</a></li>
-      <li><a id="links" href="https://salty-savannah-6762.herokuapp.com/">https://salty-savannah-6762.herokuapp.com/</a></li>
-      <li><a id="links" href="https://warm-bayou-6696.herokuapp.com/">https://warm-bayou-6696.herokuapp.com/</a></li>
-       <li><a id"links" href="https://github.com/MariaV27">https://github.com/MariaV27</a></li>
-        <li><a id="links" href="https://linkedin.com/in/mariavintimilla">https://linkedin.com/in/mariavintimilla</a></li>
-    </ul>
-    </p>
-        <section id="page6">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" id="header-home">
+        <h1 class="header">Maria's Repos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="list-group"></div>
+      </div>
+      <div class="col-md-10">
+        <table class="table">
+          <thead>
+            <th>Characters</th>
+            <th>Coder</th>
+            <th>Commits</th>
+            <th>Date</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+         <section id="page6">
           <div class="content">
             <div class="container clearfix">
               <div class="row">
@@ -95,10 +109,12 @@
             </div>
           </div>
         </section>
-      </div>
-    </div>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/portfolio.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/commits.js"></script>
+  <script type="text/javascript" src="js/repos2.js"></script>
 </body>
 </html>
