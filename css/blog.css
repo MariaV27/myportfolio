@@ -1,0 +1,164 @@
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 80%; 
+    height: 80%; 
+    overflow: auto; /* Enable scroll if needed */
+  }
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 500px){
+    .modal-content {
+        width: 100%;
+    }
+}
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background: #74C390;
+}
+
+.item:nth-child(2) {
+    background: #51BCE8;
+}
+
+.item:nth-child(3) {
+    background: #E46653;
+}
+body {
+  background-color: #936c6c; 
+  font-size: 20px;
+  font-family: 'Times New Roman';
+  color: #936c6c
+  body {
+    background-image: url("https://www.facebook.com/photo.php?fbid=10206961213370551&l=fd0a34ea62"); 
+ 
+}  
+
+
+#blog.html {
+  background-color: #936c6c;
+}
+
+
+li {
+    display: inline;
+}  
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+
+}
+
+#container 
+    {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+h1,h2,h3,h4,h5{ font-size: 40px;}
+
+
+
+p > a {
+  font size: 20px;
+  font-weight: italic;
+}
+
+#img {
+  text-align: center;
+}
+
+#button {
+  width: 100px;
+  height: 100px;
+}
+
+
+list {
+  list-style-type: lower-alpha;
+  text-align: center;
+}
+
+#div {
+  text-align: center;
+}
