@@ -20,34 +20,30 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
-
-$(document).ready(function(){
-
-
-$("#repobutton").on("click", function() {
-  
+$(document).ready(function() {
   $.ajax({
-  type: "GET",
-  url: "https://api.github.com/users/MariaVintimilla/repos",
-  success: tester
+    type: "GET",
+    url: "https://api.github.com/users/mariav70/repos",
+    success: function(repos) {
+      for (var i = 0; i < repos.length; i++) {
+      var newListItem = buildListGroup(repos[i]);
+      $(".list-group").append(newListItem);
+      }
+    },
+    error: function(jqHXR, textStatus, errorThrown) {
+      alert("Error");
+    }
   });
 
+  function buildListGroup(repoData) {
+    var commitsApiUrl = "https://api.github.com/repos/";
+    commitsApiUrl += repoData.owner.login + "/";
+    commitsApiUrl += repoData.name + "/commits";
 
-function tester(dataFromRepos){
-  for (var i = 0; i < dataFromRepos.length; i++) {
-    var x = buildElements(dataFromRepos[i].name);
-
-  $("tr").append(x);   
-
+    var newLink = $("<a>")
+      .attr("href", commitsApiUrl)
+      .addClass("list-group-item")
+      .append(repoData.name);
+    return newLink;
   }
-}
-
-function buildElements(dataRedux) {
-  var y = $("<div>").append(dataRedux);
-  return y;
- }
-
-
-});
 });

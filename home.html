@@ -1,13 +1,20 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">  
+        <link rel="stylesheet" type="text/css" href="style/stylesheet.css">  
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
@@ -52,20 +59,26 @@
 </div>
 
 
-<!--beginning of NavBar-->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Maria's Portfolio!</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <div class="btn-group" role="group" aria-label="...">
-               <li><button type="button" class="btn btn-default btn-lg">
-              <li class="active"><a href="blog.html">My Blog</a></li> </button>
-              <li><button type="button" class="btn btn-default btn-lg">
-              <li class="active"><a href="repos.html">My Repos/Git</a></li> </button>
-          </div>
-        </ul>
-  </div>
-</nav>  
+<!--Navbar Start-->
+  <nav class="navbar navbar-default navbar-custom" id="navbar">
+    <div class="container-fluid" id="navbar">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="home.html">Hi, I am Maria! </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="repos.html">My Repos</a></li>
+        <li><a href="nonprofit.html">Nonprofit</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/maria.vintimilla.54" target="blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+        <li><a href="https://github.com/MariaV27" target="blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/LeSweetTart" target="blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mariavintimilla" target="blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
 
     
 <marquee behavior="scroll" direction="left">Hey there! Welcome to Maria's Portfolio! :-)</marquee>
@@ -73,8 +86,9 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="portfolio.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="portfolio.js"></script>
 
 
 </body>
